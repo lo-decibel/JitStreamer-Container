@@ -1,0 +1,15 @@
+version: '3'
+services:
+  jit-streamer:
+    image: local/jit-streamer
+    container_name: jit-streamer
+    volumes:
+      - ./config/lockdown:/var/lib/lockdown 
+      - ./config/database:/database
+      - ./config/DMG:/JitStreamer/DMG
+      - ./config/config.toml:/JitStreamer/config.toml
+      - ./versions.json:/JitStreamer/versions.json
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    ports:
+      - 3000:3000
