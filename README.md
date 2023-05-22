@@ -4,7 +4,7 @@
 
  ## Running JitStreamer
 
-Make sure you download the JitStreamer iOS shortcut from [http://jitstreamer.com](http://jitstreamer.com]), and edit the shortcut in the Shortcuts app to point to the http(s) address and port on the host you intend to run your JitStreamer instance on. The default port is 3000, but you can specify the port in `docker-compose.yml`. Other options can be found in `config/config.toml`
+Make sure you download the JitStreamer iOS shortcut from [http://jitstreamer.com](http://jitstreamer.com), and edit the shortcut in the Shortcuts app to point to the http(s) address and port on the host you intend to run your JitStreamer instance on. The default port is 3000, but you can specify the port in `docker-compose.yml`. Other options can be found in `config/config.toml`
 
 To build the image, clone this repository and run
 
